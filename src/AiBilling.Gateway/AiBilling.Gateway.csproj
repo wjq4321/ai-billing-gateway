@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>AiBilling.Gateway</RootNamespace>
+    <!--
+      本机 NuGet 缓存的 SDK 包不完整（缺少 apphost 包），
+      因此不生成 exe 宿主，改用 `dotnet AiBilling.Gateway.dll` 启动。
+      恢复联网后可把这两行删掉以生成 exe。
+    -->
+    <UseAppHost>false</UseAppHost>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AiBilling.Core\AiBilling.Core.csproj" />
+  </ItemGroup>
+
+</Project>

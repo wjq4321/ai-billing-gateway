@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/AiBilling.Core/AiBilling.Core.csproj" />
+  <Project Path="src/AiBilling.Gateway/AiBilling.Gateway.csproj" />
+  <Project Path="src/AiBilling.Cli/AiBilling.Cli.csproj" />
+</Solution>

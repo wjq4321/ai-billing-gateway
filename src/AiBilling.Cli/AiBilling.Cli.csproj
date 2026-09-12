@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>AiBilling.Cli</RootNamespace>
+    <AssemblyName>aibilling</AssemblyName>
+    <!-- 本机缺少 apphost NuGet 包，用 `dotnet aibilling.dll` 运行；联网后可移除 -->
+    <UseAppHost>false</UseAppHost>
+  </PropertyGroup>
+
+</Project>

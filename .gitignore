@@ -1,0 +1,76 @@
+# ============================================================
+#  .NET
+# ============================================================
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+publish/
+*.dll
+*.pdb
+*.exe
+*.nupkg
+!**/packages/build/
+*.cache
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ============================================================
+#  本机配置与密钥 —— 绝不提交
+# ============================================================
+# 真实配置含数据库密码与管理端密码
+src/AiBilling.Gateway/appsettings.json
+src/AiBilling.Gateway/appsettings.*.json
+!src/AiBilling.Gateway/appsettings.example.json
+!src/AiBilling.Gateway/appsettings.Development.json
+
+# 本机 NuGet 离线配置
+NuGet.Config.local
+
+# CLI 保存的登录凭据（含明文密码）
+aibilling-credentials.json
+.aibilling-credentials.json
+
+# ============================================================
+#  运行时数据
+# ============================================================
+backups/
+*.sql
+logs/
+*.log
+.localfeed/
+.nuget/
+.dotnet-home/
+
+# ============================================================
+#  编辑器 / 系统
+# ============================================================
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+#  测试与临时文件
+# ============================================================
+[Tt]est[Rr]esult*/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+_coverage*/
+*.tmp
+*.temp
+.recovered.cs
+.fixed.cs
