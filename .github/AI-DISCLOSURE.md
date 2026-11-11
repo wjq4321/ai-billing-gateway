@@ -100,12 +100,13 @@ AI 生成的首版代码**并不完美**，以下是实际发现并修掉的问�
 
 | 依赖 | 许可证 | 说明 |
 |---|---|---|
-| `MySql.Data` | GPLv2 / 商业双授权 | 本项目采用 GPLv3 开源，与之兼容 |
+| `MySql.Data` | GPLv2（附带 FOSS Exception）/ 商业双授权 | 注意：FSF 认为 GPLv2-only 与 GPLv3 不兼容，Oracle 的 FOSS Exception 能否覆盖 GPLv3 组合存在解释空间，建议用 Apache-2.0 的 `MySqlConnector` 替换 |
 | `Microsoft.Extensions.*` | MIT | 微软官方库 |
 | `MSTest` | MIT | 仅测试使用 |
 
-> 若你希望以更宽松的许可证（如 MIT）发布本项目，需先把 `MySql.Data`
-> 替换为 MIT 协议的 `MySqlConnector`。API 高度相似，改动量很小。
+> 想让许可证链更干净：把 `MySql.Data` 换成 Apache-2.0 协议的
+> `MySqlConnector`（API 高度相似，改动量小），可同时消除 GPLv2/GPLv3
+> 兼容性争议，并让本项目的 GPLv3 对第三方使用者更友好。
 
 ---
 
